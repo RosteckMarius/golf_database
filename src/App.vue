@@ -34,19 +34,22 @@
     </v-app-bar>
 
     <v-main>
-      <HomeScreen/>
+      <MainMenu left></MainMenu>
     </v-main>
   </v-app>
 </template>
 
 <script>
-import HomeScreen from './components/HomeScreen';
-
+//import LoginScreen from './views/LoginScreen/Login.view';
+//import StudentsScreen from './views/StudentsScreen/StudentsScreen.view';
+import MainMenu from './views/MainMenu/MainMenu.view'
 export default {
   name: 'App',
 
   components: {
-    HomeScreen,
+   // LoginScreen,
+   // StudentsScreen,
+  MainMenu
   },
 
   data: () => ({

@@ -1,9 +1,9 @@
 <template>
   <v-container>
     <v-row class="text-center">
-      <v-col cols="12">
+      <v-col cols="12 pb-0">
         <v-img
-            :src="require('../assets/testlogo.png')"
+            :src="require('../../assets/testlogo.png')"
             class="my-3"
             contain
             height="200"
@@ -24,10 +24,10 @@
 </template>
 
 <script>
-import login from "@/components/Login.component"
+import login from "@/components/LoginScreen.component"
 
 export default {
-  name: 'HelloWorld',
+  name: 'Login',
   components: {
     login
   },
