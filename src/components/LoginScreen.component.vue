@@ -18,9 +18,14 @@
         </div>
         <v-card-actions class="pt-0 pb-8">
           <v-spacer/>
-          <v-btn dark>
-            Sign in
-          </v-btn>
+
+          <router-link to="/main">
+            <v-btn dark>
+              Sign in
+            </v-btn>
+          </router-link>
+
+
           <v-spacer/>
         </v-card-actions>
       </v-card>
