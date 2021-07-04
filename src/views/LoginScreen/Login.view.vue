@@ -3,7 +3,7 @@
     <v-row class="text-center">
       <v-col cols="12 pb-0">
         <v-img
-            :src="require('../../assets/logo.png')"
+            :src="require('../../assets/testlogo.png')"
             class="my-3"
             contain
             height="200"
@@ -17,7 +17,7 @@
     </v-row>
     <v-row>
     <v-spacer/>
-    <login dark></login>
+    <login></login>
     <v-spacer/>
     </v-row>
   </v-container>

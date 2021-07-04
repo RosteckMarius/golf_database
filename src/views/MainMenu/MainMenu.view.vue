@@ -1,8 +1,7 @@
 <template>
   <v-card
-      height="400"
+      height="100%"
       width="256"
-      class="mx-auto"
   >
     <v-navigation-drawer permanent>
       <v-list-item>
@@ -25,14 +24,18 @@
         <v-list-item
             v-for="item in items"
             :key="item.title"
+            :to="item.route"
             link
         >
           <v-list-item-icon>
+
             <v-icon>{{ item.icon }}</v-icon>
+
           </v-list-item-icon>
 
           <v-list-item-content>
-            <v-list-item-title>{{ item.title }}</v-list-item-title>
+              <v-list-item-title>{{ item.title }}</v-list-item-title>
+
           </v-list-item-content>
         </v-list-item>
       </v-list>
@@ -43,12 +46,12 @@
 <script>
 export default {
   name: "MainMenu.view",
-  data(){
-    return{
-      items:[
-        { title: 'Dashboard', icon: 'mdi-view-dashboard' },
-        { title: 'Students', icon: 'mdi-image' },
-        { title: 'About', icon: 'mdi-help-box' },
+  data() {
+    return {
+      items: [
+        {title: 'Dashboard', icon: 'mdi-view-dashboard', route: '/'},
+        {title: 'Students', icon: 'mdi-image', route: '/students'},
+        {title: 'About', icon: 'mdi-help-box', route: '/login'},
       ]
     }
   }

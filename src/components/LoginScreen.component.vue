@@ -19,8 +19,8 @@
         <v-card-actions class="pt-0 pb-8">
           <v-spacer/>
 
-          <router-link to="/main">
-            <v-btn dark>
+          <router-link to="/students">
+            <v-btn>
               Sign in
             </v-btn>
           </router-link>
