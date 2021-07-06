@@ -1,5 +1,8 @@
 module.exports = {
-  transpileDependencies: [
-    'vuetify'
-  ]
+    devServer: {
+        proxy: 'https://cloudy.tijazcloud.de/',
+    },
+    transpileDependencies: [
+        'vuetify'
+    ]
 }

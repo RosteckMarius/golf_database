@@ -17,6 +17,7 @@
         <v-img
             contain
             min-width="100"
+            to = "/"
             :src="require('./assets/Name.png')"
             width="100"
         />
@@ -46,8 +47,6 @@
 <script>
 import LoginScreen from './views/LoginScreen/Login.view';
 import DropdownMenu from './components/DropdownMenu.component.vue'
-//import StudentsScreen from './views/StudentsScreen/StudentsScreen.view';
-//import MainMenu from './views/MainMenu/MainMenu.view'
 
 export default {
   name: 'App',
@@ -55,8 +54,6 @@ export default {
   components: {
     LoginScreen,
     DropdownMenu,
-
-
   },
 
   data: () => ({

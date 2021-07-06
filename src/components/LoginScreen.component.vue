@@ -20,7 +20,7 @@
           <v-spacer/>
 
           <router-link to="/students">
-            <v-btn>
+            <v-btn dark>
               Sign in
             </v-btn>
           </router-link>
@@ -33,7 +33,7 @@
       <v-card outlined>
         <v-card-text class="text-center" onclick="">
           New to Clientbase?
-          <a :href="'https://www.google.de'">Sign up here</a>
+          <router-link to="/register">Sign up here</router-link>
         </v-card-text>
       </v-card>
     </v-col>
@@ -41,6 +41,8 @@
 </template>
 
 <script>
+
+
 //TODO Sign up link does not forward to Browser
 export default {
   name: "Login.component.vue"
