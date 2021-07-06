@@ -112,29 +112,48 @@ export default class Register extends Vue {
     })
   }
 
-  /*
-    testPost() {
-      axios.post(
-          'https://cloudy.tijazcloud.de/users/register',
-          {
-            email: this.form.email,
-            password: this.form.password
-          }
-      )
 
-      //axios.post('https://cloudy.tijazcloud.de/users/login')
-    }
-  */
+  testPost() {
+    axios.post(
+        'https://cloudy.tijazcloud.de/users/register',
+        {
+          email: this.form.email,
+          password: this.form.password
+        }
+    )
+
+    //axios.post('https://cloudy.tijazcloud.de/users/login')
+  }
+
   testGet() {
+
+    /*axios.get('https://api.github.com/user', {
+      headers: {
+        'Authorization': `token ${access_token}`
+      }
+    })
+        .then((res) => {
+          console.log(res.data)
+        })
+        .catch((error) => {
+          console.error(error)
+        }) */
+
 
     axios.get('https://cloudy.tijazcloud.de/hello', {
       headers: {
-        "Authorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJtYXJpdXMucm9zdGVja0BnbWFpbC5jb20iLCJpc3MiOiJjbG91ZHkiLCJleHAiOjE2MjU1Njc2MDB9.elIiYOuymAKtHSEdS_0DVyCJfLUP8WnyU8tHWwb2Xvo",
-        "Content-Type" : "application/json"
-  }
-  }).
-    then(response => (this.answer = response))
-    console.log(this.answer)
+        'Authorization': "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJtYXJpdXMucm9zdGVja0BnbWFpbC5jb20iLCJpc3MiOiJjbG91ZHkiLCJleHAiOjE2MjU1Njc2MDB9.elIiYOuymAKtHSEdS_0DVyCJfLUP8WnyU8tHWwb2Xvo",
+        "Access-Control-Allow-Origin": "*",
+        "Access-Control-Allow-Methods": "GET, POST, PATCH, PUT, DELETE, OPTIONS",
+        "Access-Control-Allow-Headers": "Origin, Content-Type, X-Auth-Token"
+      }
+    }).then((res) => {
+      console.log(res.data)
+    })
+        .catch((error) => {
+          console.error("TARD")
+          console.error(error)
+        })
 
 
   }
